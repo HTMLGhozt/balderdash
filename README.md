@@ -3,11 +3,11 @@
 ## Inspiration
 
 Balderdash is an attempt to experiment with new technologies and
-[Test-driven development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development 'Test-driven development - Wikipedia').
+[Test-driven development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development "Test-driven development - Wikipedia").
 It will be a an interpretation of the titular
-[Lodash](https://lodash.com/, 'A modern JavaScript utility library') library and
+[Lodash](https://lodash.com/, "A modern JavaScript utility library") library and
 is loosely follows
-[Brian Schermerhorn's](https://twitter.com/bscherm03 'Brian Schermerhorn - Twitter')
+[Brian Schermerhorn's](https://twitter.com/bscherm03 "Brian Schermerhorn - Twitter")
 YouTube series
 [Build Your Own Lodash](https://www.youtube.com/playlist?list=PLeHA3yHguTjd8YW0PvL4z6F86sC0QecKs).
 
