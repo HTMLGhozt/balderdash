@@ -33,13 +33,5 @@
     "hooks": {
       "pre-commit": "npm run test && lint-staged"
     }
-  },
-  "ava": {
-    "files": [
-      "test/*.test.js"
-    ],
-    "require": [
-      "sucrase/register"
-    ]
   }
 }
