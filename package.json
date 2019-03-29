@@ -2,11 +2,12 @@
   "name": "balderdash",
   "version": "0.0.1",
   "description": "A custom Lodash package, based on a course by Brian Schermerhorn",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "",
+    "test": "ava",
+    "test:watch": "pnpm test -- --watch",
     "docs:build": "pnpx documentation build index.js -f html -o docs",
-    "build": "pnpx rollup index.js",
+    "build": "rollup -c",
     "lint": "eslint ./",
     "prettier": "prettier \"**/*.+(js|json|yml|yaml|md|mdx)\"",
     "format": "npm run prettier -- --write"
@@ -32,5 +33,13 @@
     "hooks": {
       "pre-commit": "npm run test && lint-staged"
     }
+  },
+  "ava": {
+    "files": [
+      "test/*.test.js"
+    ],
+    "require": [
+      "./test/helpers/sucrase-register.js"
+    ]
   }
 }
