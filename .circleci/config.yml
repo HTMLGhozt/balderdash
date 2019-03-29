@@ -18,7 +18,10 @@ jobs:
 
     steps:
       - checkout
-
+      - run:
+          name: 'Install pnpm'
+          command: |
+            curl -L https://unpkg.com/@pnpm/self-installer | node
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -34,4 +37,4 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: pnpm test
+      - run: pnpm run test
