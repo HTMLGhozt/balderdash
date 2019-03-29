@@ -1,11 +1,14 @@
 {
-  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:ava/recommended",
+    "plugin:prettier/recommended"
+  ],
   "env": {
-    "node": true,
-    "jest": true
+    "node": true
   },
   "parserOptions": {
-    "ecmaVersion": 2018
+    "ecmaVersion": 2019
   },
   "plugins": ["prettier", "ava"],
   "rules": {
