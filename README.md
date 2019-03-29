@@ -1,4 +1,5 @@
 # Balderdash
+[![CircleCI](https://circleci.com/gh/HTMLGhozt/balderdash/tree/master.svg?style=svg)](https://circleci.com/gh/HTMLGhozt/balderdash/tree/master)
 
 ## Inspiration
 
