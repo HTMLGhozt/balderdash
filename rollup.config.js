@@ -1,7 +1,7 @@
 import sucrase from 'rollup-plugin-sucrase';
 
 export default {
-  input: 'src/index.js',
+  input: 'lib/index.js',
   output: {
     dir: './dist',
     sourcemap: true,
