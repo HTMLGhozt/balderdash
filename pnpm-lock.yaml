@@ -12,6 +12,7 @@ devDependencies:
   rxjs: 6.4.0
   sucrase: 3.10.0
   tap: 12.6.1
+  testdouble: 3.11.0
 lockfileVersion: 5
 packages:
   /@babel/code-frame/7.0.0:
@@ -1842,6 +1843,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-jvW33lBDej/cprToZe96pVy0gDY=
+  /is-plain-obj/1.1.0:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-caUMhCnfync8kqOQpKA7OfzVHT4=
   /is-plain-object/2.0.4:
     dependencies:
       isobject: 3.0.1
@@ -2823,6 +2830,16 @@ packages:
       node: '>=0.6'
     resolution:
       integrity: sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  /quibble/0.5.5:
+    dependencies:
+      lodash: 4.17.11
+      resolve: 1.10.0
+    dev: true
+    engines:
+      iojs: '>= 1.0.0'
+      node: '>= 0.12.0'
+    resolution:
+      integrity: sha512-cIePu3BtGlaTW1bjFgBcLT6QMxD8PtnZDCmPJUzO+RepIz8GuXsmZIEPGFjlPxzG9zfIj4nNLPxBDlUbvr9ESg==
   /rc/1.2.8:
     dependencies:
       deep-extend: 0.6.0
@@ -3309,6 +3326,15 @@ packages:
     dev: true
     resolution:
       integrity: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==
+  /stringify-object-es5/2.5.0:
+    dependencies:
+      is-plain-obj: 1.1.0
+      is-regexp: 1.0.0
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-BXw8mpChJzObudFwSikLt70KHsU=
   /stringify-object/3.3.0:
     dependencies:
       get-own-enumerable-property-symbols: 3.0.0
@@ -3487,6 +3513,17 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-RYuDiH8oj8Vtb/+/rSYuJmOO+mk=
+  /testdouble/3.11.0:
+    dependencies:
+      lodash: 4.17.11
+      quibble: 0.5.5
+      stringify-object-es5: 2.5.0
+      theredoc: 1.0.0
+    dev: true
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-hmF04fDUiTHy8yVQx6mucpOeyH5qElb3UtMos4xWZtJR2MsS/nzLEN+5wQ4QiGS4TV1X32eMSzLgh53uKg9ufA==
   /text-table/0.2.0:
     dev: true
     resolution:
@@ -3505,6 +3542,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-5p44obq+lpsBCCB5eLn2K4hgSDk=
+  /theredoc/1.0.0:
+    dev: true
+    resolution:
+      integrity: sha512-KU3SA3TjRRM932jpNfD3u4Ec3bSvedyo5ITPI7zgWYnKep7BwQQaxlhI9qbO+lKJoRnoAbEVfMcAHRuKVYikDA==
   /through/2.3.8:
     dev: true
     resolution:
@@ -3857,3 +3898,4 @@ specifiers:
   rxjs: ^6.4.0
   sucrase: ^3.10.0
   tap: ^12.6.1
+  testdouble: ^3.11.0
