@@ -1,6 +1,10 @@
-import test from 'ava';
+import { test } from 'tap';
 import _ from '../lib/index';
 
-test('It is a function', t => {
-  t.assert(typeof _.map === 'function');
+test('map', ({ test, end }) => {
+  test('It should be a function', t => {
+    t.assert(typeof _.map === 'function');
+    t.end();
+  });
+  end();
 });

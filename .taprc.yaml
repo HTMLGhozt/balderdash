@@ -1,0 +1,4 @@
+color: true
+esm: true
+reporter: 'spec'
+nodeArgs: ['-r', 'sucrase/register']

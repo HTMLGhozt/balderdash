@@ -1,3 +1,34 @@
-node_modules/
-shrinkwrap.yaml
 build/
+
+# macOS
+.DS_Store
+
+# Node
+.cache
+*.tgz
+.env
+.env.test
+node_modules/
+.nyc_output
+logs
+*.log
+shrinkwrap.yaml
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
