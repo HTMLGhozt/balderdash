@@ -21,11 +21,11 @@ test('Define map as', ({ test, end }) => {
     });
 
     test('should iterate invoking callback each time', async t => {
-      const callback = td.function('callback');
-      const captor = td.matchers.captor();
-      map(arrayLike, callback);
-
       try {
+        const callback = td.function('callback');
+        const captor = td.matchers.captor();
+        map(arrayLike, callback);
+
         td.verify(callback(captor.capture()), { ignoreExtraArgs: true });
         td.verify(callback(), { times: 2, ignoreExtraArgs: true });
       } catch (error) {
@@ -46,20 +46,19 @@ test('Define map as', ({ test, end }) => {
       t.end();
     });
 
-    test('should return a new array', t => {
+    test('should return a new array-like', t => {
       const testArr = map(arrayLike, x => x);
       t.assertNot(Object.is(arrayLike, testArr));
       t.end();
     });
 
-    test('should not mutate the previous array', t => {
+    test('should not mutate the previous array-like', t => {
       map(arrayLike, s => s + 'fie');
       t.assert(arrayLike[0] === 'foo', 'expect arrayLike[0] to be `foo`');
       t.assert(arrayLike[1] === 'bar', 'expect arrayLike[1] to be `bar`');
 
       t.end();
     });
-
     end();
   });
   end();
