@@ -17,7 +17,8 @@ YouTube series
 - [pnpm](https://pnpm.js.org/en/) - package manager
 - [documentation.js](https://documentation.js.org/) - static site generator
   following [JSDoc](http://usejsdoc.org/) conventions
-- [AVA](https://github.com/avajs/ava) - Test runner
+- [Tap](https://www.node-tap.org/) - Test runner
+- [TestDouble.js](https://github.com/testdouble/testdouble.js) - mocking library
 - [rollup.js](https://rollupjs.org/guide/en) - module bundler
 - [sucrase](https://github.com/alangpierce/sucrase) - compiler
 
