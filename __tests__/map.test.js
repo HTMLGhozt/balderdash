@@ -3,16 +3,17 @@ import td from 'testdouble';
 
 import { color, leftPad } from './utils';
 import map from '../lib/map';
+import { isArrayLike } from '../lib/utils';
 
 td.config({ suppressErrors: true });
 
-test('Define map as', ({ test, end }) => {
-  test('should be a function', t => {
+test('Define map: ', ({ test, end }) => {
+  test('It should be a function', t => {
     t.assert(typeof map === 'function');
     t.end();
   });
 
-  test('given an array-like it', ({ test, beforeEach, end }) => {
+  test('Given an array-like it', ({ test, beforeEach, end }) => {
     let arrayLike;
 
     beforeEach(done => {
@@ -48,7 +49,11 @@ test('Define map as', ({ test, end }) => {
 
     test('should return a new array-like', t => {
       const testArr = map(arrayLike, x => x);
-      t.assertNot(Object.is(arrayLike, testArr));
+      t.assert(isArrayLike(testArr), 'should return an array-like');
+      t.assertNot(
+        Object.is(arrayLike, testArr),
+        'input array and testArr should not be the same',
+      );
       t.end();
     });
 
